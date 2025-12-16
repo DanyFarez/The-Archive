@@ -9,9 +9,9 @@ require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
 // --- CONFIGURATION ---
-$MY_EMAIL = "danreez1307@gmail.com"; // Your email to get the alert
-$SMTP_EMAIL = "danreez1307@gmail.com"; 
-$SMTP_PASSWORD = "iaxy xkvo fkpk ehwo"; 
+$MY_EMAIL = ""; // Your email to get the alert
+$SMTP_EMAIL = ""; 
+$SMTP_PASSWORD = ""; 
 
 if (isset($_POST['verify_btn'])) {
     $user_code = $_POST['otp_input'];
@@ -82,4 +82,5 @@ if (isset($_POST['verify_btn'])) {
         </form>
     </div>
 </body>
+
 </html>
