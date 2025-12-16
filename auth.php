@@ -9,12 +9,12 @@ require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
 // --- CONFIGURATION ---
-$MY_BIRTHDAY = "2005-07-13"; 
-$MY_EMAIL = "danreez1307@gmail.com"; // THIS IS THE CREATOR EMAIL
+$MY_BIRTHDAY = ""; 
+$MY_EMAIL = ""; // THIS IS THE CREATOR EMAIL
 
 // --- GMAIL SMTP SETTINGS ---
-$SMTP_EMAIL = "danreez1307@gmail.com"; 
-$SMTP_PASSWORD = "iaxy xkvo fkpk ehwo"; 
+$SMTP_EMAIL = ""; 
+$SMTP_PASSWORD = ""; 
 
 // Get data
 $visitor_email = $_POST['visitor_email'];
@@ -69,4 +69,5 @@ if ($passcode === $MY_BIRTHDAY) {
 } else {
     echo "<script>alert('Incorrect birthday.'); window.location.href='index.php';</script>";
 }
+
 ?>
