@@ -31,7 +31,7 @@ if (isset($_POST['verify_btn'])) {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom($SMTP_EMAIL, 'My Journey Archive');
+            $mail->setFrom($SMTP_EMAIL, 'The Archive');
             $mail->addAddress($MY_EMAIL); // Send to YOU
 
             $mail->isHTML(true);
@@ -84,3 +84,4 @@ if (isset($_POST['verify_btn'])) {
 </body>
 
 </html>
+
